@@ -6,9 +6,9 @@ import sidebarItems from './sidebarItem';
 import NavGroup from './NavGroup/NavGroup.vue';
 import NavItem from './NavItem/NavItem.vue';
 import NavCollapse from './NavCollapse/NavCollapse.vue';
-import ExtraBox from './extrabox/ExtraBox.vue';
-import UserProfile from './extrabox/UserProfile.vue';
-import Logo from '../logo/LogoMain.vue';
+// import ExtraBox from './extrabox/ExtraBox.vue';
+// import UserProfile from './extrabox/UserProfile.vue';
+// import Logo from '../logo/LogoMain.vue';
 
 const customizer = useCustomizerStore();
 const sidebarMenu = shallowRef(sidebarItems);
@@ -17,7 +17,6 @@ const sidebarMenu = shallowRef(sidebarItems);
 <template>
   <v-navigation-drawer
     left
-    v-model="customizer.Sidebar_drawer"
     elevation="0"
     rail-width="60"
     mobile-breakpoint="lg"
@@ -28,9 +27,9 @@ const sidebarMenu = shallowRef(sidebarItems);
   >
     <!---Logo part -->
 
-    <div class="pa-5">
+    <!-- <div class="pa-5">
       <Logo />
-    </div>
+    </div> -->
     <!-- ---------------------------------------------- -->
     <!---Navigation -->
     <!-- ---------------------------------------------- -->
@@ -49,12 +48,12 @@ const sidebarMenu = shallowRef(sidebarItems);
           <!---End Single Item-->
         </template>
       </v-list>
-      <div class="pa-4">
+      <!-- <div class="pa-4">
         <ExtraBox />
-      </div>
+      </div> -->
     </perfect-scrollbar>
 
     <!-- user profile -->
-    <UserProfile />
+    <!-- <UserProfile /> -->
   </v-navigation-drawer>
 </template>

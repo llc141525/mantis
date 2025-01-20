@@ -2,11 +2,11 @@
 import { RouterView } from 'vue-router';
 import LoaderWrapper from './LoaderWrapper.vue';
 import VerticalSidebarVue from './vertical-sidebar/VerticalSidebar.vue';
-import VerticalHeaderVue from './vertical-header/VerticalHeader.vue';
-import HorizontalHeader from './horizontal-header/HorizontalHeader.vue';
-import HorizontalSidebar from './horizontal-sidebar/HorizontalSidebar.vue';
+// import VerticalHeaderVue from './vertical-header/VerticalHeader.vue';
+// import HorizontalHeader from './horizontal-header/HorizontalHeader.vue';
+// import HorizontalSidebar from './horizontal-sidebar/HorizontalSidebar.vue';
 import Customizer from './customizer/CustomizerPanel.vue';
-import FooterPanel from './footer/FooterPanel.vue';
+// import FooterPanel from './footer/FooterPanel.vue';
 import { useCustomizerStore } from '../../stores/customizer';
 const customizer = useCustomizerStore();
 </script>
@@ -24,10 +24,12 @@ const customizer = useCustomizerStore();
       ]"
     >
       <Customizer />
-      <VerticalSidebarVue v-if="!customizer.setHorizontalLayout" />
-      <VerticalHeaderVue v-if="!customizer.setHorizontalLayout" />
-      <HorizontalHeader v-if="customizer.setHorizontalLayout" />
-      <HorizontalSidebar v-if="customizer.setHorizontalLayout" />
+      <!-- 左侧边栏 -->
+      <VerticalSidebarVue v-if="!customizer.setHorizontalLayout" /> 
+      <!-- 上栏 -->
+      <!-- <VerticalHeaderVue v-if="!customizer.setHorizontalLayout" />
+      <HorizontalHeader v-if="customizer.setHorizontalLayout" /> -->
+      <!-- <HorizontalSidebar v-if="customizer.setHorizontalLayout" /> -->
 
       <v-main class="page-wrapper">
         <v-container fluid>
@@ -38,11 +40,11 @@ const customizer = useCustomizerStore();
             <RouterView />
           </div>
         </v-container>
-        <v-container fluid class="pt-0">
+        <!-- <v-container fluid class="pt-0">
           <div :class="customizer.boxed ? 'maxWidth' : ''">
             <FooterPanel />
           </div>
-        </v-container>
+        </v-container> -->
       </v-main>
     </v-app>
   </v-locale-provider>

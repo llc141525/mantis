@@ -1,24 +1,24 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-import BaseBreadcrumb from '@/components/shared/BaseBreadcrumb.vue';
+// import BaseBreadcrumb from '@/components/shared/BaseBreadcrumb.vue';
 
 // icons
 import { DownloadOutlined } from '@ant-design/icons-vue';
 
-const page = ref({ title: 'Add New product' });
-const breadcrumbs = ref([
-  {
-    title: 'Ecommerce',
-    disabled: false,
-    href: '#'
-  },
-  {
-    title: 'Add New product',
-    disabled: true,
-    href: '#'
-  }
-]);
+// const page = ref({ title: 'Add New product' });
+// const breadcrumbs = ref([
+//   {
+//     title: 'Ecommerce',
+//     disabled: false,
+//     href: '#'
+//   },
+//   {
+//     title: 'Add New product',
+//     disabled: true,
+//     href: '#'
+//   }
+// ]);
 
 const items = ref(['100', '200', '300', '400']);
 const items1 = ref(['1', '2', '3']);
@@ -26,7 +26,7 @@ const items2 = ref(['In stock', 'Out of stock']);
 </script>
 
 <template>
-  <BaseBreadcrumb :title="page.title" :breadcrumbs="breadcrumbs"></BaseBreadcrumb>
+  <!-- <BaseBreadcrumb :title="page.title" :breadcrumbs="breadcrumbs"></BaseBreadcrumb> -->
   <v-row>
     <v-col>
       <v-card variant="outlined" class="bg-surface">
