@@ -2,7 +2,7 @@
 // imported components
 import RecentOrder from './components/RecentOrder.vue';
 import TransactionHistory from './components/TransactionHistory.vue';
-import HelpSupport from './components/HelpSupport.vue';
+// import HelpSupport from './components/HelpSupport.vue';
 import WidgetFive from '../../widgets/statistics/components/WidgetFive.vue';
 import UniqueVisitor from '../../widgets/chart/components/UniqueVisitor.vue';
 import IncomeOverview from '../../widgets/chart/components/IncomeOverview.vue';
@@ -66,9 +66,9 @@ import SalesReport from '../../widgets/chart/components/SalesReport.vue';
         <!-- -------------------------------------------------------------------- -->
         <!-- Help support -->
         <!-- -------------------------------------------------------------------- -->
-        <v-col cols="12">
+        <!-- <v-col cols="12">
           <HelpSupport />
-        </v-col>
+        </v-col> -->
       </v-row>
     </v-col>
   </v-row>

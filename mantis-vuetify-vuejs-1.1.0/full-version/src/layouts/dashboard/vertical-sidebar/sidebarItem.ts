@@ -2,7 +2,7 @@
 import {
 
   ShoppingCartOutlined,
-
+  DashboardOutlined
 } from '@ant-design/icons-vue';
 
 export interface menu {
@@ -23,22 +23,22 @@ export interface menu {
 }
 
 const sidebarItem: menu[] = [
-  // { header: 'Dashboard' },
-  // {
-  //   title: 'Dashboard',
-  //   icon: DashboardOutlined,
-  //   to: '/dashboard/default',
-  //   children: [
-  //     {
-  //       title: 'Default',
-  //       to: '/dashboard/default'
-  //     },
-  //     {
-  //       title: 'Analytics',
-  //       to: '/dashboard/analytics'
-  //     }
-  //   ]
-  // },
+  { header: 'Dashboard' },
+  {
+    title: 'Dashboard',
+    icon: DashboardOutlined,
+    to: '/dashboard/default',
+    children: [
+      {
+        title: 'Default',
+        to: '/dashboard/default'
+      },
+      {
+        title: 'Analytics',
+        to: '/dashboard/analytics'
+      }
+    ]
+  },
   // {
   //   title: 'Components',
   //   icon: GoldOutlined,
