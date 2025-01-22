@@ -1,7 +1,7 @@
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, watch } from 'vue';
 import { useEcomStore } from '@/stores/apps/eCommerce';
-import { useRoute } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 import { Carousel, Slide, Navigation } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
 import product1 from '@/assets/images/e-commerce/prod-1.png';
@@ -16,6 +16,7 @@ import { HeartOutlined } from '@ant-design/icons-vue';
 
 const store = useEcomStore();
 const route = useRoute();
+const router = useRouter();
 
 const getDetailImage = computed(() => {
   return store.products[route.params.id - 1].image;
@@ -56,6 +57,10 @@ const currentSlide = ref(2);
 function slideTo(val) {
   currentSlide.value = val;
 }
+
+watch(currentSlide, (newVal) => {
+  router.replace(`/ecommerce/product/detail/${newVal + 1}`);
+});
 </script>
 
 <template>
