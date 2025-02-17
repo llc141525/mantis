@@ -21,7 +21,7 @@ const products: Products[] = [
   {
     id: 1,
     image: product1,
-    name:"哈密瓜",
+    name: "哈密瓜",
     description: "正宗新疆吐鲁番哈密瓜,新鲜当季水果甜瓜,香瓜蜜瓜西州蜜",
     rating: chance.floating({ min: 0.1, max: 5.0 }),
     discount: 25,
@@ -127,7 +127,7 @@ const products: Products[] = [
   {
     id: 7,
     image: product7,
-    name:"土鸡蛋",
+    name: "土鸡蛋",
     description: "源自农家，自然散养，纯正土鸡蛋，富硒营养",
     rating: chance.floating({ min: 0.1, max: 5.0 }),
     discount: 15,
@@ -145,8 +145,8 @@ const products: Products[] = [
   {
     id: 8,
     image: product8,
-    name:"西兰花",
-    description:"营养满分，翠绿诱人，西兰花，健康美味双重享受！",
+    name: "西兰花",
+    description: "营养满分，翠绿诱人，西兰花，健康美味双重享受！",
     rating: chance.floating({ min: 0.1, max: 5.0 }),
     discount: 20,
     salePrice: 14.92,
