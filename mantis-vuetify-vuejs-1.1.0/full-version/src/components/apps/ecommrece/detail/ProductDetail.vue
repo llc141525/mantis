@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, computed } from 'vue';
+import { ref, onMounted, computed, watch } from 'vue';
 import { useEcomStore } from '@/stores/apps/eCommerce';
 import { useRoute } from 'vue-router';
 import ProductCarousel from './ProductCarousel.vue';
